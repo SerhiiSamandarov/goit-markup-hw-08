@@ -1,0 +1,950 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Портфоліо</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+    />
+    <link rel="stylesheet" href="./css/main.min.css" />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="container header__container">
+        <nav class="header-nav">
+          <a class="header-logo logo link" href="./index.html"
+            >Web<span class="logo--black">Studio</span></a
+          >
+          <ul class="site-nav list">
+            <li class="site-nav__item">
+              <a
+                class="site-nav__link site-nav__link--current link"
+                href="./index.html"
+                >Студія</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link link" href="./portfolio.html"
+                >Портфоліо</a
+              >
+            </li>
+            <li class="site-nav__item">
+              <a class="site-nav__link link" href="#contacts">Контакти</a>
+            </li>
+          </ul>
+        </nav>
+        <ul class="header-contact list">
+          <li class="header-contact__item">
+            <a
+              class="header-contact__link link"
+              href="mailto:info@devstudio.com"
+              target="_blank"
+            >
+              <svg class="header-contact__icon" width="16" height="12">
+                <use href="./images/icons.svg#envelope"></use>
+              </svg>
+              info@devstudio.com</a
+            >
+          </li>
+          <li class="header-contact__item">
+            <a
+              class="header-contact__link link"
+              href="tel:+380961111111"
+              target="_blank"
+            >
+              <svg class="header-contact__icon" width="10" height="16">
+                <use href="./images/icons.svg#telephone"></use>
+              </svg>
+              +38 096 111 11 11</a
+            >
+          </li>
+        </ul>
+        <button type="button" class="mobile-menu-btn js-open-menu">
+          <svg width="40" height="40">
+            <use
+              href="./images/icons.svg#mobile-menu_40px"
+              class="mobile-menu-btn__burger-icon"
+            ></use>
+          </svg>
+        </button>
+      </div>
+      <!-- Mobile-menu -->
+      <div class="mobile-menu js-menu-container">
+        <div class="container mobile-menu__container">
+          <nav>
+            <button type="button" class="mobile-menu__close-btn js-close-menu">
+              <svg width="40" height="40">
+                <use
+                  href="./images/icons.svg#mobile-close_40px"
+                  class="mobile-menu__close-icon"
+                ></use>
+              </svg>
+            </button>
+            <ul class="mobile-nav list">
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link link" href="./index.html">Студія</a>
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link link" href="./portfolio.html"
+                  >Портфоліо</a
+                >
+              </li>
+              <li class="mobile-nav__item">
+                <a class="mobile-nav__link link" href="#contacts">Контакти</a>
+              </li>
+            </ul>
+          </nav>
+          <ul class="mobile-contact list">
+            <li class="mobile-contact__item">
+              <a
+                class="mobile-contact__tel link"
+                href="tel:+380961111111"
+                target="_blank"
+                >+38 096 111 11 11</a
+              >
+            </li>
+            <li class="mobile-contact__item">
+              <a
+                class="mobile-contact__email link"
+                href="mailto:info@devstudio.com"
+                target="_blank"
+              >
+                info@devstudio.com</a
+              >
+            </li>
+          </ul>
+          <ul class="mobile-social-list list">
+            <li class="mobile-social-list__item">
+              <a class="mobile-social-list__link link" href="">Instagram</a>
+            </li>
+            <li class="mobile-social-list__item">
+              <a class="mobile-social-list__link link" href="">Twitter</a>
+            </li>
+            <li class="mobile-social-list__item">
+              <a class="mobile-social-list__link link" href="">Facebook</a>
+            </li>
+            <li class="mobile-social-list__item">
+              <a class="mobile-social-list__link link" href="">LinkedIn</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+    <main>
+      <section class="section">
+        <div class="container">
+          <h1 class="visually-hidden">Проекти</h1>
+          <!-- Filter buttons -->
+          <div class="filter-container">
+            <ul class="filter-list list">
+              <li class="filter-list__item">
+                <button
+                  class="filter-list__btn filter-list__btn--first"
+                  type="button"
+                >
+                  Все
+                </button>
+              </li>
+              <li class="filter-list__item">
+                <button
+                  class="filter-list__btn filter-list__btn--second"
+                  type="button"
+                >
+                  Веб-Сайти
+                </button>
+              </li>
+              <li class="filter-list__item">
+                <button
+                  class="filter-list__btn filter-list__btn--third"
+                  type="button"
+                >
+                  Додатки
+                </button>
+              </li>
+              <li class="filter-list__item">
+                <button
+                  class="filter-list__btn filter-list__btn--fourth"
+                  type="button"
+                >
+                  Дизайн
+                </button>
+              </li>
+              <li class="filter-list__item">
+                <button
+                  class="filter-list__btn filter-list__btn--fifth"
+                  type="button"
+                >
+                  Маркетинг
+                </button>
+              </li>
+            </ul>
+          </div>
+          <!-- Galary -->
+          <ul class="galary-set list">
+            <li class="galary-set__item">
+              <a class="galary-set__link link" href="">
+                <div class="galary-set__img-thumb">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-note@1x.webp 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-note@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-note@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-note@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-note@1x.webp 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-note@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-note@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-note@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-note@1x.webp 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-note@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-note@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-note@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="galary-set__img"
+                      src="./images/portfolio/portfolio-mobile/portfolio-mobile-note@1x.jpg"
+                      alt="note"
+                    />
+                  </picture>
+                  <p class="galary-set__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="galary-set__discription">
+                  <h2 class="galary-set__title">Технокряк</h2>
+                  <p class="galary-set__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="galary-set__item">
+              <a href="" class="galary-set__link link">
+                <div class="galary-set__img-thumb">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-basket@1x.webp 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-basket@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-basket@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-basket@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-basket@1x.webp 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-basket@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-basket@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-basket@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-basket@1x.webp 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-basket@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-basket@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-basket@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="galary-set__img"
+                      src="./images/portfolio/portfolio-mobile/portfolio-mobile-basket@1x.jpg"
+                      alt="basket"
+                    />
+                  </picture>
+                  <p class="galary-set__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="galary-set__discription">
+                  <h2 class="galary-set__title">
+                    Постер New Orlean vs Golden Star
+                  </h2>
+                  <p class="galary-set__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="galary-set__item">
+              <a href="" class="galary-set__link link">
+                <div class="galary-set__img-thumb">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-seafood@1x.webp 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-seafood@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-seafood@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-seafood@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-seafood@1x.webp 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-seafood@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-seafood@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-seafood@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-seafood@1x.webp 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-seafood@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-seafood@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-seafood@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="galary-set__img"
+                      src="./images/portfolio/portfolio-mobile/portfolio-mobile-seafood@1x.jpg"
+                      alt="seafood"
+                    />
+                  </picture>
+                  <p class="galary-set__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="galary-set__discription">
+                  <h2 class="galary-set__title">Ресторан Seafood</h2>
+                  <p class="galary-set__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="galary-set__item">
+              <a href="" class="galary-set__link link">
+                <div class="galary-set__img-thumb">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-headphones@1x.webp 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-headphones@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-headphones@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-headphones@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-headphones@1x.webp 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-headphones@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-headphones@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-headphones@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-headphones@1x.webp 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-headphones@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-headphones@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-headphones@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="galary-set__img"
+                      src="./images/portfolio/portfolio-mobile/portfolio-mobile-headphones@1x.jpg"
+                      alt="headphones"
+                    />
+                  </picture>
+                  <p class="galary-set__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="galary-set__discription">
+                  <h2 class="galary-set__title">Проєкт Prime</h2>
+                  <p class="galary-set__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="galary-set__item">
+              <a href="" class="galary-set__link link">
+                <div class="galary-set__img-thumb">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-boxes@1x.webp 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-boxes@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-boxes@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-boxes@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-boxes@1x.webp 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-boxes@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-boxes@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-boxes@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-boxes@1x.webp 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-boxes@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-boxes@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-boxes@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="galary-set__img"
+                      src="./images/portfolio/portfolio-mobile/portfolio-mobile-boxes@1x.jpg"
+                      alt="boxes"
+                    />
+                  </picture>
+                  <p class="galary-set__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="galary-set__discription">
+                  <h2 class="galary-set__title">Проєкт Boxes</h2>
+                  <p class="galary-set__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+            <li class="galary-set__item">
+              <a href="" class="galary-set__link link">
+                <div class="galary-set__img-thumb">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-pc@1x.webp 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-pc@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-pc@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-pc@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-pc@1x.webp 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-pc@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-pc@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-pc@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-pc@1x.webp 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-pc@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-pc@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-pc@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="galary-set__img"
+                      src="./images/portfolio/portfolio-mobile/portfolio-mobile-pc@1x.jpg"
+                      alt="pc"
+                    />
+                  </picture>
+                  <p class="galary-set__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="galary-set__discription">
+                  <h2 class="galary-set__title">Inspiration has no Borders</h2>
+                  <p class="galary-set__text">Веб-сайт</p>
+                </div>
+              </a>
+            </li>
+            <li class="galary-set__item">
+              <a href="" class="galary-set__link link">
+                <div class="galary-set__img-thumb">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-book@1x.webp 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-book@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-book@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-book@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-book@1x.webp 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-book@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-book@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-book@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-book@1x.webp 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-book@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-book@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-book@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="galary-set__img"
+                      src="./images/portfolio/portfolio-mobile/portfolio-mobile-book@1x.jpg"
+                      alt="book"
+                    />
+                  </picture>
+                  <p class="galary-set__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="galary-set__discription">
+                  <h2 class="galary-set__title">Видання Limited Edition</h2>
+                  <p class="galary-set__text">Дизайн</p>
+                </div>
+              </a>
+            </li>
+            <li class="galary-set__item">
+              <a href="" class="galary-set__link link">
+                <div class="galary-set__img-thumb">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-lab@1x.webp 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-lab@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-lab@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-lab@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-lab@1x.webp 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-lab@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-lab@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-lab@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-lab@1x.webp 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-lab@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-lab@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-lab@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="galary-set__img"
+                      src="./images/portfolio/portfolio-mobile/portfolio-mobile-lab@1x.jpg"
+                      alt="lab"
+                    />
+                  </picture>
+                  <p class="galary-set__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="galary-set__discription">
+                  <h2 class="galary-set__title">Проект LAB</h2>
+                  <p class="galary-set__text">Маркетинг</p>
+                </div>
+              </a>
+            </li>
+            <li class="galary-set__item">
+              <a href="" class="galary-set__link link">
+                <div class="galary-set__img-thumb">
+                  <picture>
+                    <!-- Desktop -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-marketing@1x.webp 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-marketing@2x.webp 2x
+                      "
+                      media="(min-width: 1200px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-marketing@1x.jpg 1x,
+                        ./images/portfolio/portfolio-desktop/portfolio-desktop-marketing@2x.jpg 2x
+                      "
+                      media="(min-width: 1200px)"
+                    />
+
+                    <!-- Tablet -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-marketing@1x.webp 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-marketing@2x.webp 2x
+                      "
+                      media="(min-width: 768px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-marketing@1x.jpg 1x,
+                        ./images/portfolio/portfolio-tablet/portfolio-tablet-marketing@2x.jpg 2x
+                      "
+                      media="(min-width: 768px)"
+                    />
+
+                    <!-- Mobile -->
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-marketing@1x.webp 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-marketing@2x.webp 2x
+                      "
+                      media="(max-width: 767px)"
+                      type="image/webp"
+                    />
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-marketing@1x.jpg 1x,
+                        ./images/portfolio/portfolio-mobile/portfolio-mobile-marketing@2x.jpg 2x
+                      "
+                      media="(max-width: 767px)"
+                    />
+
+                    <img
+                      class="galary-set__img"
+                      src="./images/portfolio/portfolio-mobile/portfolio-mobile-marketing@1x.jpg"
+                      alt="marketing"
+                    />
+                  </picture>
+                  <p class="galary-set__overlay">
+                    Ресурс пропонує комплексні пропозиції з різним рівнем
+                    функціоналу та сервісів. Все це дозволить відвідувачу
+                    отримати вичерпні відомості про компанію чи приватну особу.
+                  </p>
+                </div>
+                <div class="galary-set__discription">
+                  <h2 class="galary-set__title">Growing Business</h2>
+                  <p class="galary-set__text">Додаток</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="footer">
+      <div class="container footer-container">
+        <div class="tablet-container">
+          <div class="address-wrapper">
+            <a class="footer-logo logo link" href="./index.html"
+              >Web<span class="logo--white">Studio</span></a
+            >
+            <address id="contacts" class="address">
+              <ul class="address list">
+                <li class="address__item">
+                  <a
+                    class="address__link link"
+                    href="https://goo.gl/maps/52CHACWSyZtGmyh28"
+                    target="_blank"
+                    >м. Київ, пр-т Лесі Українки, 26</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--grey link"
+                    href="mailto:info@example.com"
+                    target="_blank"
+                    >info@example.com</a
+                  >
+                </li>
+                <li class="address__item">
+                  <a
+                    class="address__link address__link--grey link"
+                    href="tel:+380991111111"
+                    target="_blank"
+                    >+38 099 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <!-- Enjoy -->
+          <div class="enjoy">
+            <p class="enjoy__text">Приєднуйтесь</p>
+            <ul class="enjoy-list list">
+              <li class="enjoy-list__item">
+                <a class="enjoy__link" href="">
+                  <svg class="enjoy__icon" width="20" height="20">
+                    <use href="./images/icons.svg#instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="enjoy-list__item">
+                <a class="enjoy__link" href="">
+                  <svg class="enjoy__icon" width="20" height="20">
+                    <use href="./images/icons.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="enjoy-list__item">
+                <a class="enjoy__link" href="">
+                  <svg class="enjoy__icon" width="20" height="20">
+                    <use href="./images/icons.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="enjoy-list__item">
+                <a class="enjoy__link" href="">
+                  <svg class="enjoy__icon" width="20" height="20">
+                    <use href="./images/icons.svg#linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+        <!-- Subscribe -->
+        <div class="subscribe">
+          <p class="subscribe__text">Підпишіться на розсилку</p>
+          <form class="subscribe-form" method="post">
+            <input
+              class="subscribe__input"
+              type="email"
+              name="user_subscription_email"
+              placeholder="E-mail"
+            />
+            <button class="subscribe__btn" type="submit">
+              Підписатися
+              <svg class="subscribe__icon" width="24" height="24">
+                <use href="./images/icons.svg#telegram"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
+      </div>
+    </footer>
+    <script src="./js/mobile-menu.js"></script>
+  </body>
+</html>
